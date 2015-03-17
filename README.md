@@ -9,6 +9,24 @@ Script to build a minimal Debian sd card image.  If you are looking for a minima
 * SSH host keys are generated and saved permanently on first boot
 * Automatic mounting of USB storage devices using usbmount
 
+# Using docker
+
+Just do :
+
+```
+docker build --rm -t="ants/odroidbuilder:v1" .
+docker run --privileged -ti ants/odroidbuilder:v1
+```
+
+and then 
+
+```
+apt-get install -y binfmt-support qemu qemu-user-static
+make
+```
+
+# Without docker
+
 ## Prerequisites:
 On a Ubuntu system, make sure the following packages are installed:
 ```
@@ -22,6 +40,8 @@ sudo dpkg --add-architecture i386
 sudo apt-get update
 sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1
 ```
+
+
 
 ## Build the image:
 Just use the make utility to build an sdcard.img.  Be sure to run this with sudo, as root privileges are required to mount the image.
