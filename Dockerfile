@@ -26,6 +26,6 @@ RUN apt-get install -y \
 	bc
 
 
-RUN git clone https://github.com/vallettea/debian-mini-odroid-c1.git /odroid
-WORKDIR /odroid
+RUN git clone https://github.com/vallettea/debian-mini-odroid-c1.git /dev/odroid
+WORKDIR /dev/odroid
 
