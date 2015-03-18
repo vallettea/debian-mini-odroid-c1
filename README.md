@@ -23,6 +23,7 @@ and then
 ```
 mount binfmt_misc -t binfmt_misc /proc/sys/fs/binfmt_misc
 apt-get install -y binfmt-support qemu qemu-user-static
+/dev/odroid
 make
 ```
 

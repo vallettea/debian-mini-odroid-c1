@@ -23,9 +23,9 @@ RUN apt-get install -y \
 	libncurses5:i386 \
 	libstdc++6:i386 \
 	lib32z1 \
-	bc
+	bc \
+	dosfstools
 
 
 RUN git clone https://github.com/vallettea/debian-mini-odroid-c1.git /dev/odroid
-WORKDIR /dev/odroid
 
