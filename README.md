@@ -15,7 +15,7 @@ Just do :
 
 ```
 docker build --rm -t="ants/odroidbuilder:v1" .
-docker run --privileged -ti ants/odroidbuilder:v1
+docker run --privileged -ti -v /temp:/temp ants/odroidbuilder:v1
 ```
 
 and then 
