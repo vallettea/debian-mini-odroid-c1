@@ -26,6 +26,3 @@ RUN apt-get install -y \
 	bc \
 	dosfstools
 
-
-RUN git clone https://github.com/vallettea/debian-mini-odroid-c1.git /root/odroid
-
